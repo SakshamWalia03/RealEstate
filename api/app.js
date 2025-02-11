@@ -30,14 +30,10 @@ app.use("/api/listing", listingRouter);
 app.use("/api/favorite", favoriteRoute);
 
 // Serve React frontend
-app.use(express.static(path.join(__dirname, "client", "build")));
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"), function (err) {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 
 // Global error handler
