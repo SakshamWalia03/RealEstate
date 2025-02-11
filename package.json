@@ -6,7 +6,7 @@
   "scripts": {
     "dev":"nodemon api/app.js",
     "start":"node api/app.js",
-    "build":"npm install && npm install --prefix client && npm run build client"
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
