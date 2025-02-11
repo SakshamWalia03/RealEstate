@@ -2,7 +2,7 @@
   "name": "realestate",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "api/app.js",
   "scripts": {
     "dev":"nodemon api/app.js",
     "start":"node api/app.js",
